@@ -11,7 +11,7 @@ import time
 
 from ..models.user_models import PlanType, ProcessingMethod, PLAN_CONFIGS
 from .simple_processing import process_image_simple
-from app.core.config import settings
+from ...core.config import settings
 
 logger = logging.getLogger(__name__)
 

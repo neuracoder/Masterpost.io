@@ -11,7 +11,7 @@ from ..models.user_models import (
     PlanType, UserUsage, UsageCheck, PLAN_CONFIGS,
     User, ProcessingMethod
 )
-from app.database.supabase_client import supabase_client
+from ...database.supabase_client import supabase_client
 
 logger = logging.getLogger(__name__)
 

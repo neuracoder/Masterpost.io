@@ -194,7 +194,7 @@ async def upload_images(
         supabase_client.get_user_profile(user_id)
     except:
         # Create demo user if doesn't exist
-        from app.database.supabase_client import supabase
+        from ...database.supabase_client import supabase
         supabase.table('user_profiles').upsert({
             'id': user_id,
             'email': 'demo@masterpost.io',

@@ -4,7 +4,7 @@ from typing import Optional, List, Dict, Any
 from supabase import create_client, Client
 import json
 
-from app.core.config import settings
+from ...core.config import settings
 from .schemas import JobCreate, JobUpdate, JobResponse, JobStatus
 
 class SupabaseManager:

@@ -16,7 +16,7 @@ from ..processing.shadow_effects import apply_professional_shadow, ShadowEffects
 
 # Import Qwen premium service
 try:
-    from services.qwen_service import remove_background_premium_sync, qwen_service
+    from .qwen_service import remove_background_premium_sync, qwen_service
     QWEN_AVAILABLE = True
 except ImportError:
     QWEN_AVAILABLE = False
@@ -190,7 +190,7 @@ def remove_background_simple(input_path: str, output_path: str, shadow_params: d
             logger.info("=" * 60)
 
             try:
-                from processing.shadow_effects import apply_simple_drop_shadow
+                from .shadow_effects import apply_simple_drop_shadow
 
                 img_with_shadow = apply_simple_drop_shadow(
                     image=img_no_bg,
