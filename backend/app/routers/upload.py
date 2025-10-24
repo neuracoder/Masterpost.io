@@ -7,9 +7,9 @@ import shutil
 import zipfile
 import logging
 
-from models.schemas import UploadResponse, JobCreate, JobResponse
-from app.database.supabase_client import supabase_client
-from app.routers.simple_auth import validate_demo_token
+from ..models.schemas import UploadResponse, JobCreate, JobResponse
+from ..database.supabase_client import supabase_client
+from .simple_auth import validate_demo_token
 
 router = APIRouter()
 

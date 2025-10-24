@@ -5,9 +5,9 @@ import zipfile
 from pathlib import Path
 import tempfile
 
-from models.schemas import DownloadResponse
-from app.database.memory_client import memory_db
-from app.core.security import get_current_user
+from ..models.schemas import DownloadResponse
+from ..database.memory_client import memory_db
+from ..core.security import get_current_user
 
 router = APIRouter()
 

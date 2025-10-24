@@ -11,8 +11,8 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
-from ...models.schemas import EditorInitRequest, EditorInitResponse, BrushActionRequest, BrushActionResponse, EditorSaveRequest, EditorSaveResponse, EditorUndoRequest, EditorUndoResponse, EditorSessionInfo
-from ...processing.manual_editor import ManualImageEditor
+from ..models.schemas import EditorInitRequest, EditorInitResponse, BrushActionRequest, BrushActionResponse, EditorSaveRequest, EditorSaveResponse, EditorUndoRequest, EditorUndoResponse, EditorSessionInfo
+from ..processing.manual_editor import ManualImageEditor
 
 # Set up logging
 logger = logging.getLogger(__name__)

@@ -10,9 +10,9 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 import jwt
 from supabase import create_client, Client
 
-from app.core.config import settings
-from app.database.supabase_client import supabase_client
-from models.user_models import User, PlanType
+from ..core.config import settings
+from ..database.supabase_client import supabase_client
+from ..models.user_models import User, PlanType
 
 logger = logging.getLogger(__name__)
 

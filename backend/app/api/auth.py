@@ -8,7 +8,7 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 import logging
 
-from app.core.supabase import supabase_admin, supabase_anon
+from ..core.supabase import supabase_admin, supabase_anon
 
 logger = logging.getLogger(__name__)
 

@@ -8,9 +8,9 @@ import shutil
 import tempfile
 import zipfile
 
-from models.schemas import UploadResponse, ProcessRequest, ProcessResponse, JobStatus
-from app.database.supabase_client import supabase_client
-from processing.batch_handler import start_batch_processing
+from ..models.schemas import UploadResponse, ProcessRequest, ProcessResponse, JobStatus
+from ..database.supabase_client import supabase_client
+from ..processing.batch_handler import start_batch_processing
 
 router = APIRouter()
 

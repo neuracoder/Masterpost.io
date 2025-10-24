@@ -11,8 +11,8 @@ import uuid
 from supabase import create_client, Client
 from postgrest.exceptions import APIError
 
-from app.core.config import settings
-from models.user_models import (
+from ..core.config import settings
+from ..models.user_models import (
     User, UserUsage, UsageCheck, PlanType,
     JobV2, JobFile, ApiKey, BillingTransaction,
     ProcessingMethod, UserStatus, PLAN_CONFIGS

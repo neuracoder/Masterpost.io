@@ -9,10 +9,10 @@ from typing import List, Optional
 import logging
 import os
 
-from app.core.supabase import supabase_admin
-from app.core.stripe_client import get_stripe
-from app.core.config import settings
-from app.api.auth import get_current_user
+from ..core.supabase import supabase_admin
+from ..core.stripe_client import get_stripe
+from ..core.config import settings
+from .auth import get_current_user
 
 logger = logging.getLogger(__name__)
 

@@ -7,9 +7,9 @@ from fastapi import APIRouter, HTTPException, Depends, status
 from pydantic import BaseModel, EmailStr
 from typing import Optional
 
-from app.auth.supabase_auth import supabase_auth, get_current_user, get_current_user_optional
-from models.user_models import User, PlanType
-from app.database.supabase_client import supabase_client
+from ..auth.supabase_auth import supabase_auth, get_current_user, get_current_user_optional
+from ..models.user_models import User, PlanType
+from ..database.supabase_client import supabase_client
 
 router = APIRouter()
 

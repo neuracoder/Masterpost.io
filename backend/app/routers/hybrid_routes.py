@@ -14,13 +14,13 @@ import tempfile
 import asyncio
 import json
 
-from models.schemas import UploadResponse, ProcessRequest, ProcessResponse, JobStatus
-from models.user_models import PlanType, ProcessingMethod, User
-from app.database.supabase_client import supabase_client
-from services.processing_service import processing_service
-from services.usage_service import usage_service
-from services.zip_service import zip_service
-from app.auth.supabase_auth import get_current_user, get_current_user_optional
+from ..models.schemas import UploadResponse, ProcessRequest, ProcessResponse, JobStatus
+from ..models.user_models import PlanType, ProcessingMethod, User
+from ..database.supabase_client import supabase_client
+from ..services.processing_service import processing_service
+from ..services.usage_service import usage_service
+from ..services.zip_service import zip_service
+from ..auth.supabase_auth import get_current_user, get_current_user_optional
 
 router = APIRouter()
 

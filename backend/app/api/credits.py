@@ -8,8 +8,8 @@ from pydantic import BaseModel
 from typing import List, Optional
 import logging
 
-from app.core.supabase import supabase_admin
-from app.api.auth import get_current_user
+from ..core.supabase import supabase_admin
+from .auth import get_current_user
 
 logger = logging.getLogger(__name__)
 

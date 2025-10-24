@@ -3,7 +3,7 @@ Supabase clients for authentication and credits system
 """
 
 from supabase import create_client, Client
-from app.core.config import settings
+from .config import settings
 
 # Admin client (service role) - for backend operations
 def get_supabase_admin() -> Client:

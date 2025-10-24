@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
 from typing import Optional
 
-from models.schemas import ProcessRequest, ProcessResponse, JobStatus, PipelineType
-from app.database.memory_client import memory_db
-from processing.batch_handler import start_batch_processing
-from app.core.security import get_current_user
+from ..models.schemas import ProcessRequest, ProcessResponse, JobStatus, PipelineType
+from ..database.memory_client import memory_db
+from ..processing.batch_handler import start_batch_processing
+from ..core.security import get_current_user
 
 router = APIRouter()
 

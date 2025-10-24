@@ -14,9 +14,9 @@ import uuid
 from pathlib import Path
 from typing import List, Dict, Any
 
-from app.routers import upload, process, download, test_routes, simple_auth, image_editor, manual_editor
+from .routers import upload, process, download, test_routes, simple_auth, image_editor, manual_editor
 try:
-    from app.routers import hybrid_routes, auth_routes
+    from .routers import hybrid_routes, auth_routes
     v2_available = True
 except ImportError as e:
     print(f"V2 routes not available: {e}")
@@ -24,13 +24,13 @@ except ImportError as e:
 
 # Credit system API routes
 try:
-    from app.api import auth as credit_auth, credits, payments
+    from .api import auth as credit_auth, credits, payments
     credit_system_available = True
 except ImportError as e:
     print(f"Credit system routes not available: {e}")
     credit_system_available = False
 
-from app.core.config import settings
+from .core.config import settings
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)

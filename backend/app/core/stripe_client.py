@@ -3,7 +3,7 @@ Stripe client for payment processing
 """
 
 import stripe
-from app.core.config import settings
+from .config import settings
 
 # Initialize Stripe with API key
 stripe.api_key = settings.STRIPE_SECRET_KEY
