@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 
 # Import shadow effects module (working version with class-based approach)
-from processing.shadow_effects import apply_professional_shadow, ShadowEffects
+from ..processing.shadow_effects import apply_professional_shadow, ShadowEffects
 
 # Import Qwen premium service
 try:

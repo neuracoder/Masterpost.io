@@ -5,10 +5,10 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 import logging
 
-from processing.image_processor import ImageProcessor
-from processing.pipelines import PipelineFactory
-from app.database.memory_client import memory_db
-from services.simple_processing import remove_background_simple
+from .image_processor import ImageProcessor
+from .pipelines import PipelineFactory
+from ..database.memory_client import memory_db
+from ..services.simple_processing import remove_background_simple
 
 logger = logging.getLogger(__name__)
 

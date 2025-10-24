@@ -9,8 +9,8 @@ from typing import Dict, Any, List, Optional
 from pathlib import Path
 import time
 
-from models.user_models import PlanType, ProcessingMethod, PLAN_CONFIGS
-from services.simple_processing import process_image_simple
+from ..models.user_models import PlanType, ProcessingMethod, PLAN_CONFIGS
+from .simple_processing import process_image_simple
 from app.core.config import settings
 
 logger = logging.getLogger(__name__)

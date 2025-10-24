@@ -7,7 +7,7 @@ import asyncio
 import logging
 from typing import Dict, Any, Optional
 from datetime import datetime, date
-from models.user_models import (
+from ..models.user_models import (
     PlanType, UserUsage, UsageCheck, PLAN_CONFIGS,
     User, ProcessingMethod
 )

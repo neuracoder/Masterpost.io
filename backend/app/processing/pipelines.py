@@ -2,7 +2,7 @@ from PIL import Image
 from typing import Dict, Any, Tuple
 from pathlib import Path
 
-from processing.image_processor import ImageProcessor
+from .image_processor import ImageProcessor
 
 class BasePipeline:
     def __init__(self, processor: ImageProcessor):

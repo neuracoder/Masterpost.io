@@ -14,9 +14,9 @@ from pathlib import Path
 import mimetypes
 from PIL import Image
 
-from services.usage_service import usage_service
-from services.processing_service import processing_service
-from models.user_models import PlanType
+from .usage_service import usage_service
+from .processing_service import processing_service
+from ..models.user_models import PlanType
 
 logger = logging.getLogger(__name__)
 
