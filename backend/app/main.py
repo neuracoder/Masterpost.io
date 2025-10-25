@@ -13,6 +13,7 @@ import io
 import uuid
 from pathlib import Path
 from typing import List, Dict, Any
+from datetime import datetime
 
 from .routers import upload, process, download, test_routes, simple_auth, image_editor, manual_editor
 try:
@@ -195,21 +196,7 @@ async def api_health_check():
 
 @app.get("/health")
 async def health_check():
-    """Health check endpoint with service diagnostics"""
-    try:
-        from rembg import remove
-        rembg_available = True
-    except ImportError:
-        rembg_available = False
-
-    return {
-        "status": "healthy",
-        "service": "masterpost-api-unified",
-        "version": "2.1.0",
-        "local_processing": rembg_available,
-        "manual_editor": "available",
-        "timestamp": time.time()
-    }
+    return {"status": "healthy", "timestamp": datetime.utcnow()}
 
 # Frontend routes - Serve HTML pages
 @app.get("/")

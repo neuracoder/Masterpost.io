@@ -1,5 +1,9 @@
 from PIL import Image, ImageEnhance, ImageFilter
-import cv2
+try:
+    import cv2
+except ImportError:
+    print("WARNING: OpenCV (cv2) could not be imported. Edge detection features will be unavailable.")
+    cv2 = None
 import numpy as np
 from pathlib import Path
 from typing import Tuple, Optional, Dict, Any
@@ -92,6 +96,9 @@ class ImageProcessor:
         return white_bg
 
     def _remove_background_edge_detection(self, image: Image.Image) -> Image.Image:
+        if cv2 is None:
+            print("Skipping edge detection because OpenCV is not available.")
+            return image
         # Convert PIL to OpenCV
         img_cv = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
 
