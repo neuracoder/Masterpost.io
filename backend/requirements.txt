@@ -25,7 +25,7 @@ gotrue==2.0.0
 stripe==7.9.0
 
 # Image Processing (Core) - Python 3.12+ compatible
-rembg>=2.0.62
+rembg==2.0.67
 pillow==10.1.0
 numpy==1.24.3
 opencv-python-headless==4.8.1.78
