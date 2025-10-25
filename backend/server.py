@@ -21,8 +21,8 @@ from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 
 # Import our simple processing function
-from services.simple_processing import process_image_simple
-from services.batch_processor import SmartBatchProcessor
+from app.services.simple_processing import process_image_simple
+from app.services.batch_processor import SmartBatchProcessor
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
