@@ -58,7 +58,10 @@
       "Bash(git rm -rf api)",
       "Bash(git rm -f package-lock.json)",
       "Bash(git commit:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git stash:*)",
+      "Bash(git pull:*)"
     ],
     "deny": [],
     "ask": []
