@@ -2,7 +2,7 @@ fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-multipart==0.0.6
 supabase==2.3.0
-rembg==2.0.50
+rembg==2.0.67
 onnxruntime==1.16.3
 pillow==10.0.1
 python-dotenv==1.0.0
