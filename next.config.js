@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  
+
   // Environment variables available to the client
   env: {
     NEXT_PUBLIC_API_URL_PROCESSING: process.env.NEXT_PUBLIC_API_URL_PROCESSING,
