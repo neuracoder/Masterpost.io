@@ -1,0 +1,778 @@
+[2025-10-20 10:17:39] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 10:17:39] [INFO] 
+Verificando dependencias...
+[2025-10-20 10:17:40] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 10:17:48] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 10:17:48] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 10:17:48] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 10:17:48] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 10:17:48] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 10:17:49] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 10:17:50] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 10:17:50] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 10:17:50] [INFO] Frontend: http://localhost:3000
+[2025-10-20 10:17:50] [INFO] Backend:  http://localhost:8002
+[2025-10-20 10:17:50] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 10:17:55] [ERROR] [BACKEND-ERR] ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8002): [winerror 10048] solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+[2025-10-20 10:17:56] [ERROR] ERROR - Backend se cerró inesperadamente (código: 1)
+[2025-10-20 10:17:56] [WARN] INFO - Revisa los logs arriba para más detalles
+[2025-10-20 10:17:56] [INFO] 
+Deteniendo servicios...
+[2025-10-20 10:17:56] [SUCCESS] OK - Frontend detenido
+[2025-10-20 10:17:56] [SUCCESS] OK - Backend detenido
+[2025-10-20 10:17:56] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 10:32:58] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 10:32:58] [INFO] 
+Verificando dependencias...
+[2025-10-20 10:32:59] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 10:33:02] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 10:33:02] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 10:33:02] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 10:33:02] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 10:33:02] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 10:33:03] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 10:33:04] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 10:33:04] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 10:33:04] [INFO] Frontend: http://localhost:3000
+[2025-10-20 10:33:04] [INFO] Backend:  http://localhost:8002
+[2025-10-20 10:33:04] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 10:33:08] [ERROR] [BACKEND-ERR] ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8002): [winerror 10048] solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+[2025-10-20 10:33:09] [ERROR] ERROR - Backend se cerró inesperadamente (código: 1)
+[2025-10-20 10:33:09] [WARN] INFO - Revisa los logs arriba para más detalles
+[2025-10-20 10:33:09] [INFO] 
+Deteniendo servicios...
+[2025-10-20 10:33:09] [SUCCESS] OK - Frontend detenido
+[2025-10-20 10:33:09] [SUCCESS] OK - Backend detenido
+[2025-10-20 10:33:09] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 10:38:35] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 10:38:35] [INFO] 
+Verificando dependencias...
+[2025-10-20 10:38:35] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 10:38:38] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 10:38:38] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 10:38:38] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 10:38:38] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 10:38:38] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 10:38:40] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 10:38:40] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 10:38:40] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 10:38:40] [INFO] Frontend: http://localhost:3000
+[2025-10-20 10:38:40] [INFO] Backend:  http://localhost:8002
+[2025-10-20 10:38:40] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 10:38:44] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 11:04:32] [INFO] 
+Deteniendo servicios...
+[2025-10-20 11:04:33] [SUCCESS] OK - Frontend detenido
+[2025-10-20 11:04:33] [SUCCESS] OK - Backend detenido
+[2025-10-20 11:04:33] [INFO] 
+Deteniendo servicios...
+[2025-10-20 11:04:33] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 17852 /T' returned non-zero exit status 128.
+[2025-10-20 11:04:33] [SUCCESS] OK - Backend detenido
+[2025-10-20 11:04:33] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 11:14:14] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 11:14:14] [INFO] 
+Verificando dependencias...
+[2025-10-20 11:14:14] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 11:14:17] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 11:14:17] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 11:14:17] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 11:14:17] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 11:14:17] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 11:14:19] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 11:14:19] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 11:14:19] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 11:14:19] [INFO] Frontend: http://localhost:3000
+[2025-10-20 11:14:19] [INFO] Backend:  http://localhost:8002
+[2025-10-20 11:14:19] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 11:14:24] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 11:36:41] [INFO] 
+Deteniendo servicios...
+[2025-10-20 11:36:41] [SUCCESS] OK - Frontend detenido
+[2025-10-20 11:36:42] [SUCCESS] OK - Backend detenido
+[2025-10-20 11:36:42] [INFO] 
+Deteniendo servicios...
+[2025-10-20 11:36:42] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 14920 /T' returned non-zero exit status 128.
+[2025-10-20 11:36:42] [SUCCESS] OK - Backend detenido
+[2025-10-20 11:36:42] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 14:24:25] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 14:24:25] [INFO] 
+Verificando dependencias...
+[2025-10-20 14:24:26] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 14:24:29] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 14:24:29] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 14:24:29] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 14:24:29] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 14:24:29] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 14:24:30] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 14:24:31] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 14:24:31] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 14:24:31] [INFO] Frontend: http://localhost:3000
+[2025-10-20 14:24:31] [INFO] Backend:  http://localhost:8002
+[2025-10-20 14:24:31] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 14:24:35] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 15:16:55] [INFO] 
+Deteniendo servicios...
+[2025-10-20 15:16:55] [SUCCESS] OK - Frontend detenido
+[2025-10-20 15:16:56] [SUCCESS] OK - Backend detenido
+[2025-10-20 15:16:56] [INFO] 
+Deteniendo servicios...
+[2025-10-20 15:16:56] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 15044 /T' returned non-zero exit status 128.
+[2025-10-20 15:16:56] [SUCCESS] OK - Backend detenido
+[2025-10-20 15:16:56] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 15:52:53] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 15:52:53] [INFO] 
+Verificando dependencias...
+[2025-10-20 15:52:54] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 15:52:58] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 15:52:58] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 15:52:58] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 15:52:58] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 15:52:58] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 15:52:59] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 15:53:00] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 15:53:00] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 15:53:00] [INFO] Frontend: http://localhost:3000
+[2025-10-20 15:53:00] [INFO] Backend:  http://localhost:8002
+[2025-10-20 15:53:00] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 15:53:05] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 15:54:48] [INFO] 
+Deteniendo servicios...
+[2025-10-20 15:54:49] [SUCCESS] OK - Frontend detenido
+[2025-10-20 15:54:49] [SUCCESS] OK - Backend detenido
+[2025-10-20 15:54:49] [INFO] 
+Deteniendo servicios...
+[2025-10-20 15:54:49] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 5856 /T' returned non-zero exit status 128.
+[2025-10-20 15:54:49] [SUCCESS] OK - Backend detenido
+[2025-10-20 15:54:49] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 16:14:09] [INFO] 
+Logs guardados en: c:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 16:14:09] [INFO] 
+Verificando dependencias...
+[2025-10-20 16:14:10] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 16:14:19] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 16:14:19] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 16:14:19] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 16:14:19] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 16:14:19] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 16:14:20] [SUCCESS] OK - Frontend listo en http://localhost:54112
+[2025-10-20 16:14:21] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 16:14:21] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 16:14:21] [INFO] Frontend: http://localhost:3000
+[2025-10-20 16:14:21] [INFO] Backend:  http://localhost:8002
+[2025-10-20 16:14:21] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 16:14:26] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 16:35:15] [ERROR] ERROR - Backend se cerró inesperadamente (código: 1)
+[2025-10-20 16:35:15] [WARN] INFO - Revisa los logs arriba para más detalles
+[2025-10-20 16:35:15] [INFO] 
+Deteniendo servicios...
+[2025-10-20 16:35:15] [SUCCESS] OK - Frontend detenido
+[2025-10-20 16:35:15] [SUCCESS] OK - Backend detenido
+[2025-10-20 16:35:15] [INFO] 
+Logs completos en: c:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 16:35:19] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 16:35:19] [INFO] 
+Verificando dependencias...
+[2025-10-20 16:35:19] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 16:35:22] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 16:35:22] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 16:35:22] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 16:35:22] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 16:35:22] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 16:35:24] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 16:35:24] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 16:35:24] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 16:35:24] [INFO] Frontend: http://localhost:3000
+[2025-10-20 16:35:24] [INFO] Backend:  http://localhost:8002
+[2025-10-20 16:35:24] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 16:35:28] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 16:36:31] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:\u274c Qwen API Error 404:
+[2025-10-20 16:36:31] [ERROR] [BACKEND-ERR] WARNING:services.simple_processing:\u26a0\ufe0f Premium processing failed: API error 404:
+[2025-10-20 16:44:12] [INFO] 
+Deteniendo servicios...
+[2025-10-20 16:44:12] [SUCCESS] OK - Frontend detenido
+[2025-10-20 16:44:12] [SUCCESS] OK - Backend detenido
+[2025-10-20 16:44:12] [INFO] 
+Deteniendo servicios...
+[2025-10-20 16:44:12] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 6920 /T' returned non-zero exit status 128.
+[2025-10-20 16:44:12] [SUCCESS] OK - Backend detenido
+[2025-10-20 16:44:12] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:19:04] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:19:04] [INFO] 
+Verificando dependencias...
+[2025-10-20 20:19:04] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 20:19:08] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 20:19:08] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 20:19:08] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 20:19:08] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 20:19:08] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 20:19:09] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 20:19:10] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 20:19:10] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 20:19:10] [INFO] Frontend: http://localhost:3000
+[2025-10-20 20:19:10] [INFO] Backend:  http://localhost:8002
+[2025-10-20 20:19:10] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 20:19:16] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 20:20:37] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:\u274c Qwen API Error 404:
+[2025-10-20 20:20:37] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:\u274c Qwen API failed: API error 404:
+[2025-10-20 20:20:37] [ERROR] [BACKEND-ERR] WARNING:services.simple_processing:\u26a0\ufe0f Premium processing failed: API error 404:
+[2025-10-20 20:34:05] [INFO] 
+Deteniendo servicios...
+[2025-10-20 20:34:06] [SUCCESS] OK - Frontend detenido
+[2025-10-20 20:34:06] [SUCCESS] OK - Backend detenido
+[2025-10-20 20:34:06] [INFO] 
+Deteniendo servicios...
+[2025-10-20 20:34:06] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 9648 /T' returned non-zero exit status 128.
+[2025-10-20 20:34:06] [SUCCESS] OK - Backend detenido
+[2025-10-20 20:34:06] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:39:11] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:39:11] [INFO] 
+Verificando dependencias...
+[2025-10-20 20:39:12] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 20:39:15] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 20:39:15] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 20:39:15] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 20:39:15] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 20:39:15] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 20:39:17] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 20:39:17] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 20:39:17] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 20:39:17] [INFO] Frontend: http://localhost:3000
+[2025-10-20 20:39:17] [INFO] Backend:  http://localhost:8002
+[2025-10-20 20:39:17] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 20:39:23] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:================================================================================
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:QWEN API ERROR
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Status: 400
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Code: InvalidParameter
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Message: Model not exist.
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Response: {"code":"InvalidParameter","message":"Model not exist.","request_id":"6c1d28db-1c88-9629-a7ef-590eedc7c5b5"}
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:================================================================================
+[2025-10-20 20:41:39] [ERROR] [BACKEND-ERR] WARNING:services.simple_processing:\u26a0\ufe0f Premium processing failed: API error 400: Model not exist.
+[2025-10-20 20:48:58] [INFO] 
+Deteniendo servicios...
+[2025-10-20 20:48:58] [SUCCESS] OK - Frontend detenido
+[2025-10-20 20:48:58] [SUCCESS] OK - Backend detenido
+[2025-10-20 20:48:58] [INFO] 
+Deteniendo servicios...
+[2025-10-20 20:48:58] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 17052 /T' returned non-zero exit status 128.
+[2025-10-20 20:48:58] [SUCCESS] OK - Backend detenido
+[2025-10-20 20:48:58] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:55:30] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-20 20:55:30] [INFO] 
+Verificando dependencias...
+[2025-10-20 20:55:31] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-20 20:55:34] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-20 20:55:34] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-20 20:55:34] [SUCCESS] OK - node_modules encontrado
+[2025-10-20 20:55:34] [SUCCESS] OK - Directorio backend verificado
+[2025-10-20 20:55:34] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-20 20:55:36] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-20 20:55:36] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-20 20:55:36] [INFO] 
+Ambos servicios iniciando...
+[2025-10-20 20:55:36] [INFO] Frontend: http://localhost:3000
+[2025-10-20 20:55:36] [INFO] Backend:  http://localhost:8002
+[2025-10-20 20:55:36] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-20 20:55:42] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-20 21:09:41] [INFO] 
+Deteniendo servicios...
+[2025-10-20 21:09:42] [SUCCESS] OK - Frontend detenido
+[2025-10-20 21:09:42] [SUCCESS] OK - Backend detenido
+[2025-10-20 21:09:42] [INFO] 
+Deteniendo servicios...
+[2025-10-20 21:09:42] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 11116 /T' returned non-zero exit status 128.
+[2025-10-20 21:09:42] [SUCCESS] OK - Backend detenido
+[2025-10-20 21:09:42] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 18:35:33] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 18:35:33] [INFO] 
+Verificando dependencias...
+[2025-10-21 18:35:35] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 18:35:45] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 18:35:45] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 18:35:45] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 18:35:45] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 18:35:45] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 18:35:46] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 18:35:47] [INFO] 
+Ambos servicios iniciando...
+
+[2025-10-21 18:35:47] [INFO] Frontend: http://localhost:3000
+[2025-10-21 18:35:47] [INFO] Backend:  http://localhost:8002
+[2025-10-21 18:35:47] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 18:35:52] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 19:03:05] [INFO] 
+Deteniendo servicios...
+[2025-10-21 19:03:05] [SUCCESS] OK - Frontend detenido
+[2025-10-21 19:03:05] [SUCCESS] OK - Backend detenido
+[2025-10-21 19:03:05] [INFO] 
+Deteniendo servicios...
+[2025-10-21 19:03:06] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 14888 /T' returned non-zero exit status 128.
+[2025-10-21 19:03:06] [SUCCESS] OK - Backend detenido
+[2025-10-21 19:03:06] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:37:02] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:37:02] [INFO] 
+Verificando dependencias...
+[2025-10-21 20:37:02] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 20:37:05] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 20:37:05] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 20:37:05] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 20:37:05] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 20:37:05] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 20:37:06] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 20:37:07] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 20:37:07] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 20:37:07] [INFO] Frontend: http://localhost:3000
+[2025-10-21 20:37:07] [INFO] Backend:  http://localhost:8002
+[2025-10-21 20:37:07] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 20:37:12] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 20:41:55] [ERROR] [FRONTEND-ERR] âš  Fast Refresh had to perform a full reload due to a runtime error.
+[2025-10-21 20:41:56] [ERROR] [FRONTEND-ERR] â¨¯ ReferenceError: Scissors is not defined
+[2025-10-21 20:42:04] [ERROR] [FRONTEND-ERR] âš  Fast Refresh had to perform a full reload due to a runtime error.
+[2025-10-21 20:42:04] [ERROR] [FRONTEND-ERR] âš  Fast Refresh had to perform a full reload due to a runtime error.
+[2025-10-21 20:46:10] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:46:10] [SUCCESS] OK - Frontend detenido
+[2025-10-21 20:46:10] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:46:10] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:46:11] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 7700 /T' returned non-zero exit status 128.
+[2025-10-21 20:46:11] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:46:11] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:47:05] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:47:05] [INFO] 
+Verificando dependencias...
+[2025-10-21 20:47:05] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 20:47:08] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 20:47:08] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 20:47:08] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 20:47:08] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 20:47:08] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 20:47:10] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 20:47:10] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 20:47:10] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 20:47:10] [INFO] Frontend: http://localhost:3000
+[2025-10-21 20:47:10] [INFO] Backend:  http://localhost:8002
+[2025-10-21 20:47:10] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 20:47:16] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 20:49:29] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:49:29] [SUCCESS] OK - Frontend detenido
+[2025-10-21 20:49:29] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:49:29] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:49:29] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 16060 /T' returned non-zero exit status 128.
+[2025-10-21 20:49:29] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:49:29] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:52:16] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 20:52:16] [INFO] 
+Verificando dependencias...
+[2025-10-21 20:52:17] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 20:52:20] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 20:52:20] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 20:52:20] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 20:52:20] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 20:52:20] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 20:52:22] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 20:52:22] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 20:52:22] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 20:52:22] [INFO] Frontend: http://localhost:3000
+[2025-10-21 20:52:22] [INFO] Backend:  http://localhost:8002
+[2025-10-21 20:52:22] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 20:52:28] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 20:56:20] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:56:21] [SUCCESS] OK - Frontend detenido
+[2025-10-21 20:56:21] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:56:21] [INFO] 
+Deteniendo servicios...
+[2025-10-21 20:56:21] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 5516 /T' returned non-zero exit status 128.
+[2025-10-21 20:56:21] [SUCCESS] OK - Backend detenido
+[2025-10-21 20:56:21] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:03:43] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:03:43] [INFO] 
+Verificando dependencias...
+[2025-10-21 21:03:43] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 21:03:47] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 21:03:47] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 21:03:47] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 21:03:47] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 21:03:47] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 21:03:49] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 21:03:49] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 21:03:49] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 21:03:49] [INFO] Frontend: http://localhost:3000
+[2025-10-21 21:03:49] [INFO] Backend:  http://localhost:8002
+[2025-10-21 21:03:49] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 21:03:55] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 21:10:43] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:10:43] [SUCCESS] OK - Frontend detenido
+[2025-10-21 21:10:43] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:10:43] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:10:43] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 13344 /T' returned non-zero exit status 128.
+[2025-10-21 21:10:43] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:10:43] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:28:47] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:28:47] [INFO] 
+Verificando dependencias...
+[2025-10-21 21:28:47] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 21:28:50] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 21:28:50] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 21:28:50] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 21:28:50] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 21:28:50] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 21:28:52] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 21:28:52] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 21:28:52] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 21:28:52] [INFO] Frontend: http://localhost:3000
+[2025-10-21 21:28:52] [INFO] Backend:  http://localhost:8002
+[2025-10-21 21:28:52] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 21:28:57] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 21:38:13] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:38:13] [SUCCESS] OK - Frontend detenido
+[2025-10-21 21:38:13] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:38:13] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:38:13] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 16484 /T' returned non-zero exit status 128.
+[2025-10-21 21:38:13] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:38:13] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:39:45] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:39:45] [INFO] 
+Verificando dependencias...
+[2025-10-21 21:39:45] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 21:39:48] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 21:39:48] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 21:39:48] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 21:39:48] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 21:39:48] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 21:39:50] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 21:39:50] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 21:39:50] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 21:39:50] [INFO] Frontend: http://localhost:3000
+[2025-10-21 21:39:50] [INFO] Backend:  http://localhost:8002
+[2025-10-21 21:39:50] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 21:39:55] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-21 21:43:14] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:43:14] [SUCCESS] OK - Frontend detenido
+[2025-10-21 21:43:14] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:43:14] [INFO] 
+Deteniendo servicios...
+[2025-10-21 21:43:14] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 1304 /T' returned non-zero exit status 128.
+[2025-10-21 21:43:14] [SUCCESS] OK - Backend detenido
+[2025-10-21 21:43:14] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:47:25] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-21 21:47:25] [INFO] 
+Verificando dependencias...
+[2025-10-21 21:47:25] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-21 21:47:28] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-21 21:47:28] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-21 21:47:28] [SUCCESS] OK - node_modules encontrado
+[2025-10-21 21:47:28] [SUCCESS] OK - Directorio backend verificado
+[2025-10-21 21:47:28] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-21 21:47:29] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-21 21:47:30] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-21 21:47:30] [INFO] 
+Ambos servicios iniciando...
+[2025-10-21 21:47:30] [INFO] Frontend: http://localhost:3000
+[2025-10-21 21:47:30] [INFO] Backend:  http://localhost:8002
+[2025-10-21 21:47:30] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-21 21:47:34] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-22 09:08:35] [ERROR] [FRONTEND-ERR] âš  Fast Refresh had to perform a full reload due to a runtime error.
+[2025-10-22 09:08:36] [ERROR] [FRONTEND-ERR] â¨¯ ReferenceError: Eraser is not defined
+[2025-10-22 09:08:51] [ERROR] [FRONTEND-ERR] âš  Fast Refresh had to perform a full reload due to a runtime error.
+[2025-10-22 09:09:47] [INFO] 
+Deteniendo servicios...
+[2025-10-22 09:09:48] [SUCCESS] OK - Frontend detenido
+[2025-10-22 09:09:48] [SUCCESS] OK - Backend detenido
+[2025-10-22 09:09:48] [INFO] 
+Deteniendo servicios...
+[2025-10-22 09:09:48] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 14836 /T' returned non-zero exit status 128.
+[2025-10-22 09:09:48] [SUCCESS] OK - Backend detenido
+[2025-10-22 09:09:48] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 09:27:08] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 09:27:08] [INFO] 
+Verificando dependencias...
+[2025-10-22 09:27:09] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-22 09:27:19] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-22 09:27:19] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-22 09:27:19] [SUCCESS] OK - node_modules encontrado
+[2025-10-22 09:27:19] [SUCCESS] OK - Directorio backend verificado
+[2025-10-22 09:27:19] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-22 09:27:21] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-22 09:27:21] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-22 09:27:21] [INFO] 
+Ambos servicios iniciando...
+[2025-10-22 09:27:21] [INFO] Frontend: http://localhost:3000
+[2025-10-22 09:27:21] [INFO] Backend:  http://localhost:8002
+[2025-10-22 09:27:21] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-22 09:27:28] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-22 10:09:54] [INFO] 
+Deteniendo servicios...
+[2025-10-22 10:09:55] [SUCCESS] OK - Frontend detenido
+[2025-10-22 10:09:55] [SUCCESS] OK - Backend detenido
+[2025-10-22 10:09:55] [INFO] 
+Deteniendo servicios...
+[2025-10-22 10:09:55] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 2372 /T' returned non-zero exit status 128.
+[2025-10-22 10:09:55] [SUCCESS] OK - Backend detenido
+[2025-10-22 10:09:55] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 14:13:04] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 14:13:04] [INFO] 
+Verificando dependencias...
+[2025-10-22 14:13:05] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-22 14:13:08] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-22 14:13:08] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-22 14:13:08] [SUCCESS] OK - node_modules encontrado
+[2025-10-22 14:13:08] [SUCCESS] OK - Directorio backend verificado
+[2025-10-22 14:13:08] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-22 14:13:10] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-22 14:13:10] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-22 14:13:10] [INFO] 
+Ambos servicios iniciando...
+[2025-10-22 14:13:10] [INFO] Frontend: http://localhost:3000
+[2025-10-22 14:13:10] [INFO] Backend:  http://localhost:8002
+[2025-10-22 14:13:10] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-22 14:13:16] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:================================================================================
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:QWEN API ERROR
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Status: 400
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Code: BadRequest.TooLarge
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:  Message: Exceeded limit on max bytes per data-uri item : 10485760
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] ERROR:services.qwen_service:================================================================================
+[2025-10-22 14:38:39] [ERROR] [BACKEND-ERR] WARNING:services.simple_processing:\u26a0\ufe0f Premium processing failed: API Error 400: Exceeded limit on max bytes per data-uri item : 10485760
+[2025-10-22 14:53:57] [INFO] 
+Deteniendo servicios...
+[2025-10-22 14:53:57] [SUCCESS] OK - Frontend detenido
+[2025-10-22 14:53:57] [SUCCESS] OK - Backend detenido
+[2025-10-22 14:53:57] [INFO] 
+Deteniendo servicios...
+[2025-10-22 14:53:57] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 16284 /T' returned non-zero exit status 128.
+[2025-10-22 14:53:57] [SUCCESS] OK - Backend detenido
+[2025-10-22 14:53:57] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 20:30:16] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 20:30:16] [INFO] 
+Verificando dependencias...
+[2025-10-22 20:30:16] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-22 20:30:19] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-22 20:30:19] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-22 20:30:19] [SUCCESS] OK - node_modules encontrado
+[2025-10-22 20:30:19] [SUCCESS] OK - Directorio backend verificado
+[2025-10-22 20:30:19] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-22 20:30:20] [SUCCESS] OK - Frontend listo en http://localhost:3000
+[2025-10-22 20:30:21] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-22 20:30:21] [INFO] 
+Ambos servicios iniciando...
+[2025-10-22 20:30:21] [INFO] Frontend: http://localhost:3000
+[2025-10-22 20:30:21] [INFO] Backend:  http://localhost:8002
+[2025-10-22 20:30:21] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-22 20:30:26] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-22 21:00:27] [INFO] 
+Deteniendo servicios...
+[2025-10-22 21:00:27] [SUCCESS] OK - Frontend detenido
+[2025-10-22 21:00:27] [SUCCESS] OK - Backend detenido
+[2025-10-22 21:00:27] [INFO] 
+Deteniendo servicios...
+[2025-10-22 21:00:27] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 7700 /T' returned non-zero exit status 128.
+[2025-10-22 21:00:27] [SUCCESS] OK - Backend detenido
+[2025-10-22 21:00:27] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 21:26:25] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-22 21:26:25] [INFO] 
+Verificando dependencias...
+[2025-10-22 21:26:25] [SUCCESS] OK - npm v11.5.2 encontrado
+[2025-10-22 21:26:28] [SUCCESS] OK - FastAPI y Uvicorn disponibles
+[2025-10-22 21:26:28] [SUCCESS] OK - rembg y PIL disponibles
+[2025-10-22 21:26:28] [SUCCESS] OK - node_modules encontrado
+[2025-10-22 21:26:28] [SUCCESS] OK - Directorio backend verificado
+[2025-10-22 21:26:28] [INFO] 
+Iniciando Frontend (Next.js)...
+[2025-10-22 21:26:30] [SUCCESS] OK - Frontend listo en http://localhost:3001
+[2025-10-22 21:26:30] [INFO] 
+Ambos servicios iniciando...
+[2025-10-22 21:26:30] [INFO] 
+Iniciando Backend (FastAPI)...
+[2025-10-22 21:26:30] [INFO] Frontend: http://localhost:3000
+[2025-10-22 21:26:30] [INFO] Backend:  http://localhost:8002
+[2025-10-22 21:26:30] [INFO] 
+Presiona Ctrl+C para detener ambos servicios
+
+[2025-10-22 21:26:38] [SUCCESS] OK - Backend listo en http://localhost:8002
+[2025-10-23 10:43:35] [INFO] 
+Deteniendo servicios...
+[2025-10-23 10:43:35] [SUCCESS] OK - Frontend detenido
+[2025-10-23 10:43:35] [SUCCESS] OK - Backend detenido
+[2025-10-23 10:43:35] [INFO] 
+Deteniendo servicios...
+[2025-10-23 10:43:35] [WARN] WARN - Error al detener frontend: Command 'taskkill /F /PID 13920 /T' returned non-zero exit status 128.
+[2025-10-23 10:43:35] [SUCCESS] OK - Backend detenido
+[2025-10-23 10:43:35] [INFO] 
+Logs completos en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-24 15:04:38] [INFO] 
+Logs guardados en: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS\launcher.log
+[2025-10-24 15:04:38] [ERROR] 
+============================================================
+[2025-10-24 15:04:38] [ERROR] ERROR - Directorio incorrecto detectado
+[2025-10-24 15:04:38] [ERROR] ============================================================
+[2025-10-24 15:04:38] [ERROR] Directorio actual: C:\Users\Neuracoder\OneDrive\Desktop\PROYECTOS_HP\SaaS-Proyects\Masterpost-SaaS
+[2025-10-24 15:04:38] [ERROR] 
+[2025-10-24 15:04:38] [ERROR] Este script debe ejecutarse desde el directorio del proyecto:
+[2025-10-24 15:04:38] [ERROR]   Masterpost-SaaS/
+[2025-10-24 15:04:38] [ERROR] 
+[2025-10-24 15:04:38] [WARN] SOLUCIÓN:
+[2025-10-24 15:04:38] [WARN]   1. Abre terminal en el directorio Masterpost-SaaS/
+[2025-10-24 15:04:38] [WARN]   2. Ejecuta: python dual_launcher.py
+[2025-10-24 15:04:38] [WARN] 
+[2025-10-24 15:04:38] [ERROR] Archivos esperados en el directorio actual:
+[2025-10-24 15:04:38] [ERROR]   ✗ package.json - NO ENCONTRADO
+[2025-10-24 15:04:38] [ERROR]   ✗ backend/ - Encontrado
+[2025-10-24 15:04:38] [ERROR]   ✗ app/ - Encontrado
+[2025-10-24 15:04:38] [ERROR] ============================================================
+[2025-10-24 15:04:38] [ERROR] 
+ERROR - Ejecuta el script desde el directorio correcto
