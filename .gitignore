@@ -1,113 +1,59 @@
-# ==========================================
-# MASTERPOST-SAAS - PRODUCTION .gitignore
-# ==========================================
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
 
-# ==========================================
-# ENVIRONMENT & SECRETS (CRITICAL!)
-# ==========================================
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+.next
+out
+
+# Production
+/build
+dist
+
+# Misc
+.DS_Store
+*.pem
+.idea
+.vscode
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
 .env
 .env.local
-.env.production
-.env.development
-*.env
-!.env.example
+.env.development.local
+.env.test.local
+.env.production.local
 
-# ==========================================
-# PYTHON
-# ==========================================
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Python (backend)
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-venv/
-env/
-ENV/
-.venv
-*.egg-info/
-dist/
-build/
-*.log
-.pytest_cache/
-.coverage
-htmlcov/
+.Python
+backend/venv/
+backend/.env
+backend/*.db
+backend/uploads/
+backend/processed/
+backend/temp/
+backend/logs/
 
-# ==========================================
-# NODE.JS & NEXT.JS (Not used in Railway)
-# ==========================================
-node_modules/
-/.next/
-/out/
-/build
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-*.tsbuildinfo
-next-env.d.ts
-package.json
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# ==========================================
-# VERCEL (Not used in Railway)
-# ==========================================
-.vercel
-vercel.json
-api/
-
-# ==========================================
-# RAILWAY
-# ==========================================
-.railway/
-
-# ==========================================
-# TEMPORARY & PROCESSING FILES
-# ==========================================
-uploads/
-processed/
-temp/
-tmp/
-*.tmp
-
-# Keep only example gallery images
-backend/img_original/*
-!backend/img_original/bicicleta.jpg
-!backend/img_original/lampara.jpg
-!backend/img_original/joyeria.jpg
-!backend/img_original/botella.jpg
-!backend/img_original/zapato.jpg
-!backend/img_original/peluche.jpg
-
-backend/img_procesada/*
-!backend/img_procesada/bicicleta.jpg
-!backend/img_procesada/lampara.jpg
-!backend/img_procesada/joyeria.jpg
-!backend/img_procesada/botella.jpg
-!backend/img_procesada/zapato.jpg
-!backend/img_procesada/peluche.jpg
-
-# ==========================================
-# OPERATING SYSTEM
-# ==========================================
-.DS_Store
+# OS
 Thumbs.db
-*.swp
-*.swo
-*~
-
-# ==========================================
-# IDE & EDITORS
-# ==========================================
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# ==========================================
-# MISC
-# ==========================================
-*.zip
-*.tar.gz
-*.bak
-*.backup
