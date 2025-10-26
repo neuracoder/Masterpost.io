@@ -227,9 +227,9 @@ const EditorToolbar: React.FC<EditorToolbarProps> = ({
                 : 'bg-blue-100'
             }`}>
               {tool === 'erase' ? (
-                <Eraser className={`w-6 h-6 ${tool === 'erase' ? 'text-red-600' : 'text-blue-600'}`} />
+                <Eraser className="w-6 h-6 text-red-600" />
               ) : (
-                <Paintbrush2 className={`w-6 h-6 ${tool === 'erase' ? 'text-red-600' : 'text-blue-600'}`} />
+                <Paintbrush2 className="w-6 h-6 text-blue-600" />
               )}
             </div>
             <div className="text-sm font-medium">

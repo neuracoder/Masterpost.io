@@ -277,14 +277,16 @@ export default function ManualEditorPage() {
                         className="w-full h-auto border-2 border-gray-200 rounded-lg"
                       />
                     </div>
-                    <div>
-                      <h4 className="font-medium mb-2">Imagen Editada</h4>
-                      <img
-                        src={editedImageUrl}
-                        alt="Editada"
-                        className="w-full h-auto border-2 border-green-200 rounded-lg"
-                      />
-                    </div>
+                    {editedImageUrl && (
+                      <div>
+                        <h4 className="font-medium mb-2">Imagen Editada</h4>
+                        <img
+                          src={editedImageUrl}
+                          alt="Editada"
+                          className="w-full h-auto border-2 border-green-200 rounded-lg"
+                        />
+                      </div>
+                    )}
                   </div>
                   <div className="mt-6 flex justify-center space-x-4">
                     <Button

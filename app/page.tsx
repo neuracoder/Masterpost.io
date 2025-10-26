@@ -646,7 +646,7 @@ export default function HomePage() {
                 </div>
 
                 <Link href="/app" className="block">
-                  <Button className="w-full" variant="outline" className="border-2 border-gray-300 hover:bg-gray-50">
+                  <Button className="w-full border-2 border-gray-300 hover:bg-gray-50" variant="outline">
                     Start Free
                   </Button>
                 </Link>
