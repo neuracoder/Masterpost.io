@@ -999,7 +999,7 @@ export default function AppPage() {
                         Processed Images ({jobStatus.successful_files.length})
                       </h4>
                       <ImageGallery
-                        images={jobStatus.successful_files}
+                        images={jobStatus.successful_files.map(file => ({ success: true, original: file, processed: file }))}
                         jobId={currentJobId}
                         isLoading={false}
                         maxVisibleImages={50}
