@@ -41,6 +41,7 @@ interface JobStatus {
   updated_at: string;
   pipeline?: string;
   error_message?: string;
+  successful_files?: string[];
 }
 
 interface HybridJobStatus extends JobStatus {

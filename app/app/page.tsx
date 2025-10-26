@@ -427,7 +427,14 @@ export default function AppPage() {
     }
   }
 
-  const pipelines = [
+  const pipelines: Array<{
+    id: "amazon" | "instagram" | "ebay";
+    name: string;
+    description: string;
+    features: string[];
+    icon: any;
+    color: string;
+  }> = [
     {
       id: "amazon",
       name: "Amazon Compliant",
