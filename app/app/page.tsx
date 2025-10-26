@@ -30,8 +30,8 @@ import ProcessingStatus from "@/components/ProcessingStatus"
 import ImageGallery from "@/components/ImageGallery"
 
 export default function AppPage() {
-  // API URL - use environment variable or default to localhost:8002
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002/api/v1'
+  // API URL from environment variable
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || ''
 
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([])
   const [selectedPipeline, setSelectedPipeline] = useState<"amazon" | "instagram" | "ebay" | "">("")
