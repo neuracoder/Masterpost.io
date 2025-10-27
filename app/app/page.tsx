@@ -108,7 +108,21 @@ export default function AppPage() {
           // Check final status
           const statusResponse = await fetch(`${API_URL}/api/v1/status/${currentJobId}`)
           const statusData = await statusResponse.json()
-          setJobStatus(statusData)
+          
+          // Map backend response to expected format
+          const mappedStatusData = {
+            ...statusData,
+            successful_files: statusData.successful_files?.map((file: any) => ({
+              success: true,
+              original: file,
+              processed: typeof file === 'string' ? file : file.processed || file.filename || 'unknown.jpg',
+              path: typeof file === 'string' ? file : file.path,
+              shadow_applied: typeof file === 'object' ? file.shadow_applied : false,
+              shadow_type: typeof file === 'object' ? file.shadow_type : null
+            })) || []
+          }
+          
+          setJobStatus(mappedStatusData)
           setIsDownloadReady(true)
           setIsProcessing(false)
         }

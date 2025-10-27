@@ -21,6 +21,21 @@ interface ImageGalleryProps {
   columns?: 2 | 3 | 4
 }
 
+// Helper function to safely get a string
+function safeString(value: any): string {
+  if (typeof value === 'string') return value
+  if (typeof value === 'object' && value !== null) {
+    return value.filename || value.name || value.processed || 'unknown.jpg'
+  }
+  return 'unknown.jpg'
+}
+
+// Helper function to safely check if a string includes a substring
+function safeIncludes(value: any, searchStr: string): boolean {
+  const str = safeString(value).toLowerCase()
+  return str.indexOf(searchStr.toLowerCase()) !== -1
+}
+
 export default function ImageGallery({
   images,
   jobId,
@@ -96,8 +111,9 @@ export default function ImageGallery({
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002'
 
-  const downloadImage = (filename: string) => {
+  const downloadImage = (processedValue: any) => {
     // Open image in new tab instead of forcing download
+    const filename = safeString(processedValue)
     const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${filename}`
     window.open(imageUrl, '_blank', 'noopener,noreferrer')
   }
@@ -137,7 +153,7 @@ export default function ImageGallery({
       <div className={`grid ${getGridClass()} gap-4`}>
         {visibleImages.map((image, index) => {
           const isLoaded = loadedImages.has(index)
-          const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${image.processed}`
+          const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${safeString(image.processed)}`
 
           return (
             <div
@@ -195,17 +211,17 @@ export default function ImageGallery({
               </div>
 
               {/* Pipeline indicator badge */}
-              {image.processed?.toLowerCase().indexOf('amazon') !== -1 && (
+              {safeIncludes(image.processed, 'amazon') && (
                 <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   Amazon
                 </div>
               )}
-              {image.processed?.toLowerCase().indexOf('ebay') !== -1 && (
+              {safeIncludes(image.processed, 'ebay') && (
                 <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   eBay
                 </div>
               )}
-              {image.processed?.toLowerCase().indexOf('instagram') !== -1 && (
+              {safeIncludes(image.processed, 'instagram') && (
                 <div className="absolute top-2 left-2 bg-pink-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   Instagram
                 </div>
