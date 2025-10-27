@@ -1,7 +1,7 @@
 // API Client for Masterpost.io Backend Integration
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
-const API_V2_BASE_URL = process.env.NEXT_PUBLIC_API_V2_URL || '';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002';
+const API_V2_BASE_URL = process.env.NEXT_PUBLIC_API_V2_URL || 'http://localhost:8002';
 
 interface ApiResponse<T> {
   data?: T;
@@ -125,7 +125,7 @@ class ApiClient {
     useV2: boolean = false
   ): Promise<ApiResponse<T>> {
     const baseUrl = useV2 ? this.v2BaseUrl : this.baseUrl;
-    const url = `${baseUrl}${endpoint}`;
+    const url = endpoint.startsWith('/api') ? `${baseUrl}${endpoint}` : `${baseUrl}/api/v1${endpoint}`;
 
     const headers: HeadersInit = {
       ...options.headers,
@@ -179,7 +179,7 @@ class ApiClient {
       formData.append('files', file);
     });
 
-    return this.makeRequest<UploadResponse>('/upload', {
+    return this.makeRequest<UploadResponse>('/api/v1/upload', {
       method: 'POST',
       body: formData,
     });
@@ -634,7 +634,7 @@ export class ImageProcessingApi {
    * @returns Full URL to preview image
    */
   static getPreviewUrl(jobId: string, filename: string): string {
-    return `${this.API_BASE}/preview/${jobId}/${filename}`;
+    return `${API_BASE_URL}/api/v1/preview/${jobId}/${filename}`;
   }
 
   /**
