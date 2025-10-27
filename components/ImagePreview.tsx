@@ -34,7 +34,8 @@ export default function ImagePreview({
   const [zoom, setZoom] = useState(1)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const currentImage = images[currentIndex]
-  const imageUrl = `http://localhost:8002/api/v1/preview/${jobId}/${currentImage.processed}`
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002'
+  const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${currentImage.processed}`
 
   const hasNext = currentIndex < images.length - 1
   const hasPrevious = currentIndex > 0
@@ -106,13 +107,14 @@ export default function ImagePreview({
   }
 
   const getPipelineBadge = () => {
-    if (currentImage.processed.includes('amazon')) {
+    const processedName = currentImage.processed.toLowerCase()
+    if (processedName.indexOf('amazon') !== -1) {
       return <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Amazon</span>
     }
-    if (currentImage.processed.includes('ebay')) {
+    if (processedName.indexOf('ebay') !== -1) {
       return <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">eBay</span>
     }
-    if (currentImage.processed.includes('instagram')) {
+    if (processedName.indexOf('instagram') !== -1) {
       return <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Instagram</span>
     }
     return null
