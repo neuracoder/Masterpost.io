@@ -94,9 +94,11 @@ export default function ImageGallery({
     }
   }
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002'
+
   const downloadImage = (filename: string) => {
     // Open image in new tab instead of forcing download
-    const imageUrl = `http://localhost:8002/api/v1/preview/${jobId}/${filename}`
+    const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${filename}`
     window.open(imageUrl, '_blank', 'noopener,noreferrer')
   }
 
@@ -135,7 +137,7 @@ export default function ImageGallery({
       <div className={`grid ${getGridClass()} gap-4`}>
         {visibleImages.map((image, index) => {
           const isLoaded = loadedImages.has(index)
-          const imageUrl = `http://localhost:8002/api/v1/preview/${jobId}/${image.processed}`
+          const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${image.processed}`
 
           return (
             <div
@@ -193,17 +195,17 @@ export default function ImageGallery({
               </div>
 
               {/* Pipeline indicator badge */}
-              {image.processed.includes('amazon') && (
+              {image.processed?.toLowerCase().indexOf('amazon') !== -1 && (
                 <div className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   Amazon
                 </div>
               )}
-              {image.processed.includes('ebay') && (
+              {image.processed?.toLowerCase().indexOf('ebay') !== -1 && (
                 <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   eBay
                 </div>
               )}
-              {image.processed.includes('instagram') && (
+              {image.processed?.toLowerCase().indexOf('instagram') !== -1 && (
                 <div className="absolute top-2 left-2 bg-pink-500 text-white text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
                   Instagram
                 </div>
