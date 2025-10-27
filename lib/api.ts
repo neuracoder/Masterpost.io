@@ -261,7 +261,7 @@ class ApiClient {
       });
 
       // Send request
-      const url = `${this.baseUrl}/upload`;
+      const url = `${this.baseUrl}/api/v1/upload`;
       console.log('🚀 API: Sending POST request to:', url)
       xhr.open('POST', url);
 
@@ -319,7 +319,7 @@ class ApiClient {
 
   // Health check
   async healthCheck(): Promise<ApiResponse<{ status: string; service: string }>> {
-    return this.makeRequest('/../../health');
+    return this.makeRequest('/health');
   }
 
   // === HYBRID V2 ENDPOINTS ===
