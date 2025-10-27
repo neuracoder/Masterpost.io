@@ -187,7 +187,7 @@ export default function LandingPage() {
                     <p className="text-xs font-semibold text-gray-500 text-center uppercase tracking-wider">Before</p>
                     <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-100">
                       <Image
-                        src="http://localhost:8002/api/v1/gallery/bicicleta/original"
+                        src="/samples/original/bicicleta.jpg"
                         alt="Before processing"
                         fill
                         className="object-cover"
@@ -198,7 +198,7 @@ export default function LandingPage() {
                     <p className="text-xs font-semibold text-gray-500 text-center uppercase tracking-wider">After</p>
                     <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-100">
                       <Image
-                        src="http://localhost:8002/api/v1/gallery/bicicleta/processed"
+                        src="/samples/processed/bicicleta.jpg"
                         alt="After processing"
                         fill
                         className="object-cover"
@@ -263,7 +263,7 @@ export default function LandingPage() {
                           </p>
                           <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg bg-gray-100">
                             <Image
-                              src={`http://localhost:8002/api/v1/gallery/${item.id}/original`}
+                              src={`/samples/original/${item.id}.jpg`}
                               alt={`${item.title} - Original`}
                               fill
                               className="object-cover"
@@ -287,7 +287,7 @@ export default function LandingPage() {
                           <p className="text-sm font-bold text-gray-900 text-center uppercase tracking-wider">After</p>
                           <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg bg-white border border-gray-200">
                             <Image
-                              src={`http://localhost:8002/api/v1/gallery/${item.id}/processed`}
+                              src={`/samples/processed/${item.id}.jpg`}
                               alt={`${item.title} - Processed`}
                               fill
                               className="object-cover"
