@@ -110,29 +110,43 @@ export default function AppPage() {
           const statusData = await statusResponse.json()
           
           // Map backend response to expected format 
+          console.log('Raw Status Data:', statusData);
+          
           const mappedStatusData = {
             ...statusData,
             successful_files: statusData.successful_files?.map((file: any) => {
+              console.log('Processing file:', file);
+              
               // Si el archivo ya tiene el formato correcto, devolverlo como está
               if (typeof file === 'object' && file.success !== undefined) {
+                console.log('File already in correct format:', file);
                 return file;
               }
 
               // Mapear la estructura de acuerdo al tipo de dato
               const fileObj = typeof file === 'string' ? { processed: file } : file;
+              console.log('File object after initial mapping:', fileObj);
 
-              return {
+              const mappedFile = {
                 success: true,
                 original: fileObj.original || fileObj.processed || fileObj.filename || 'unknown.jpg',
                 processed: fileObj.processed || fileObj.filename || 'unknown.jpg',
-                path: fileObj.path || `${fileObj.processed}`,
+                path: fileObj.path || `${fileObj.processed || fileObj.filename || 'unknown.jpg'}`,
                 shadow_applied: fileObj.shadow_applied || false,
                 shadow_type: fileObj.shadow_type || null
               };
+
+              console.log('Mapped file:', mappedFile);
+              return mappedFile;
             }) || []
           };
           
-          console.log('Mapped Status Data:', mappedStatusData);
+          console.log('Final Mapped Status Data:', mappedStatusData);
+          
+          if (!Array.isArray(mappedStatusData.successful_files)) {
+            console.error('successful_files is not an array:', mappedStatusData.successful_files);
+            mappedStatusData.successful_files = [];
+          }
           setJobStatus(mappedStatusData);
           setIsDownloadReady(true)
           setIsProcessing(false)

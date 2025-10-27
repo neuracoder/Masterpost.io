@@ -21,6 +21,46 @@ interface ImageGalleryProps {
   columns?: 2 | 3 | 4
 }
 
+// Validador de imágenes procesadas
+function validateProcessedImage(image: any): image is ProcessedImage {
+  return (
+    image &&
+    typeof image === 'object' &&
+    typeof image.success === 'boolean' &&
+    typeof image.original === 'string' &&
+    typeof image.processed === 'string'
+  );
+}
+
+// Función para normalizar imágenes
+function normalizeImage(image: any): ProcessedImage {
+  if (validateProcessedImage(image)) {
+    return image;
+  }
+
+  // Si es un string, crear objeto con valores por defecto
+  if (typeof image === 'string') {
+    return {
+      success: true,
+      original: image,
+      processed: image,
+      path: image,
+      shadow_applied: false,
+      shadow_type: null
+    };
+  }
+
+  // Si es un objeto pero no tiene la estructura correcta
+  return {
+    success: true,
+    original: image?.original || image?.processed || image?.filename || 'unknown.jpg',
+    processed: image?.processed || image?.filename || 'unknown.jpg',
+    path: image?.path || image?.processed || image?.filename || 'unknown.jpg',
+    shadow_applied: Boolean(image?.shadow_applied),
+    shadow_type: image?.shadow_type || null
+  };
+}
+
 // Helper function to safely get a string
 function safeString(value: any): string {
   // Si es un string directo, devolverlo
@@ -181,12 +221,20 @@ export default function ImageGallery({
     )
   }
 
+  // Validar y normalizar las imágenes antes de renderizar
+  const normalizedImages = React.useMemo(() => {
+    return images.map(img => normalizeImage(img));
+  }, [images]);
+
+  // Filtrar las imágenes visibles y normalizarlas
+  const visibleNormalizedImages = normalizedImages.slice(0, visibleCount);
+
   return (
     <>
       <div className={`grid ${getGridClass()} gap-4`}>
-        {visibleImages.map((image, index) => {
+        {visibleNormalizedImages.map((image, index) => {
           const isLoaded = loadedImages.has(index)
-          const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${safeString(image.processed)}`
+          const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${image.processed}`
 
           return (
             <div
@@ -271,7 +319,7 @@ export default function ImageGallery({
             onClick={loadMore}
             className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
           >
-            Load More ({images.length - visibleCount} remaining)
+            Load More ({normalizedImages.length - visibleCount} remaining)
           </button>
         </div>
       )}
@@ -279,7 +327,7 @@ export default function ImageGallery({
       {/* Lightbox */}
       {selectedImageIndex !== null && (
         <ImagePreview
-          images={images}
+          images={normalizedImages}
           currentIndex={selectedImageIndex}
           jobId={jobId}
           onClose={closeLightbox}
