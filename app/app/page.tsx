@@ -83,7 +83,7 @@ export default function AppPage() {
 
     const pollProgress = async () => {
       try {
-        const response = await fetch(`${API_URL}/progress/${currentJobId}`)
+        const response = await fetch(`${API_URL}/api/v1/progress/${currentJobId}`)
 
         if (!response.ok) {
           console.error(`Progress poll failed: HTTP ${response.status}`)
@@ -106,7 +106,7 @@ export default function AppPage() {
         if (data.status === 'completed') {
           clearInterval(intervalId)
           // Check final status
-          const statusResponse = await fetch(`${API_URL}/status/${currentJobId}`)
+          const statusResponse = await fetch(`${API_URL}/api/v1/status/${currentJobId}`)
           const statusData = await statusResponse.json()
           setJobStatus(statusData)
           setIsDownloadReady(true)
