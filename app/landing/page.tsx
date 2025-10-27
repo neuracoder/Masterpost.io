@@ -18,6 +18,8 @@ import {
   Star,
 } from "lucide-react"
 
+import GalleryShowcase from "@/components/GalleryShowcase"
+
 // Gallery items configuration
 const GALLERY_ITEMS = [
   { id: "bicicleta", title: "Complex Vintage Bicycle", description: "Multiple angles & spokes", time: "6s" },
@@ -244,6 +246,9 @@ export default function LandingPage() {
               backgrounds.
             </p>
           </div>
+
+          {/* New Gallery Showcase Component */}
+          <GalleryShowcase />
 
           {/* Slider */}
           <div className="relative max-w-6xl mx-auto">

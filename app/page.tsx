@@ -282,7 +282,7 @@ export default function HomePage() {
                     <p className="text-xs font-semibold text-gray-500 text-center uppercase tracking-wider">Before</p>
                     <div className="relative aspect-square rounded-xl overflow-hidden bg-gray-100 border-2 border-gray-200 p-2">
                       <Image
-                        src="http://localhost:8002/api/v1/gallery/bicicleta/original"
+                        src="/samples/original/bicicleta.jpg"
                         alt="Before processing"
                         fill
                         className="object-contain"
@@ -293,7 +293,7 @@ export default function HomePage() {
                     <p className="text-xs font-semibold text-gray-500 text-center uppercase tracking-wider">After</p>
                     <div className="relative aspect-square rounded-xl overflow-hidden bg-white border-2 border-green-200 p-2">
                       <Image
-                        src="http://localhost:8002/api/v1/gallery/bicicleta/processed"
+                        src="/samples/processed/bicicleta.jpg"
                         alt="After processing"
                         fill
                         className="object-contain"
@@ -399,7 +399,7 @@ export default function HomePage() {
                           <p className="text-sm font-bold text-gray-900 text-center uppercase tracking-wider">Before</p>
                           <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg bg-white p-4">
                             <Image
-                              src={`http://localhost:8002/api/v1/gallery/${item.id}/original`}
+                              src={`/samples/original/${item.id}.jpg`}
                               alt={`${item.title} - Original`}
                               fill
                               className="object-contain"
@@ -476,9 +476,7 @@ export default function HomePage() {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`h-3 rounded-full transition-all ${
-                    index === currentSlide ? "bg-green-500 w-8" : "bg-gray-300 hover:bg-green-300 w-3"
-                  }`}
+                  className={`h-3 rounded-full transition-all ${index === currentSlide ? "bg-green-500 w-8" : "bg-gray-300 hover:bg-green-300 w-3"}`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -522,7 +520,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-3">
-                  {[
+                  {[ 
                     "Good for simple backgrounds",
                     "Fast processing (~2 seconds)",
                     "Cost-effective for bulk",
@@ -533,7 +531,7 @@ export default function HomePage() {
                       <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}
-                  {["Some shadows may remain", "Complex items may have artifacts"].map((warning, i) => (
+                  {[ "Some shadows may remain", "Complex items may have artifacts"].map((warning, i) => (
                     <div key={i} className="flex items-start">
                       <span className="text-yellow-500 mr-3 flex-shrink-0">⚠</span>
                       <span className="text-gray-600">{warning}</span>
@@ -564,7 +562,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-3">
-                  {[
+                  {[ 
                     "Perfect for complex items",
                     "Zero shadows, pure white",
                     "Professional e-commerce quality",
@@ -631,7 +629,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-3">
-                  {[
+                  {[ 
                     "No credit card required",
                     "All marketplace formats",
                     "Amazon, eBay, Instagram",
@@ -680,7 +678,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-3">
-                  {[
+                  {[ 
                     "Everything in Free",
                     "Premium AI processing",
                     "Priority support",
@@ -724,7 +722,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-3">
-                  {[
+                  {[ 
                     "Everything in Pro Pack",
                     "Maximum value per credit",
                     "Volume processing",
@@ -781,7 +779,7 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            {[
+            {[ 
               {
                 question: "What's the difference between Basic and Premium?",
                 answer:
@@ -833,9 +831,7 @@ export default function HomePage() {
                 >
                   <span className="font-semibold text-gray-900 text-lg pr-4">{faq.question}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform ${
-                      openFaq === index ? "rotate-180" : ""
-                    }`}
+                    className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform ${openFaq === index ? "rotate-180" : ""}`}
                   />
                 </button>
                 {openFaq === index && (
