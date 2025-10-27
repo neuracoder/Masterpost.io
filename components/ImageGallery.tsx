@@ -23,17 +23,35 @@ interface ImageGalleryProps {
 
 // Helper function to safely get a string
 function safeString(value: any): string {
-  if (typeof value === 'string') return value
+  // Si es un string directo, devolverlo
+  if (typeof value === 'string') return value;
+  
+  // Si es un objeto, intentar obtener el nombre del archivo
   if (typeof value === 'object' && value !== null) {
-    return value.filename || value.name || value.processed || 'unknown.jpg'
+    // Priorizar el campo processed para mostrar la imagen procesada
+    if (value.processed) return value.processed;
+    // Si no hay processed, buscar en otros campos
+    return value.filename || value.name || value.original || 'unknown.jpg';
   }
-  return 'unknown.jpg'
+  
+  // Si no es string ni objeto, devolver valor por defecto
+  return 'unknown.jpg';
 }
 
 // Helper function to safely check if a string includes a substring
 function safeIncludes(value: any, searchStr: string): boolean {
-  const str = safeString(value).toLowerCase()
-  return str.indexOf(searchStr.toLowerCase()) !== -1
+  if (!value || !searchStr) return false;
+  
+  let str: string;
+  
+  // Si es un objeto con processed o filename
+  if (typeof value === 'object' && value !== null) {
+    str = value.processed || value.filename || value.name || '';
+  } else {
+    str = String(value);
+  }
+  
+  return str.toLowerCase().includes(searchStr.toLowerCase());
 }
 
 export default function ImageGallery({
@@ -113,9 +131,24 @@ export default function ImageGallery({
 
   const downloadImage = (processedValue: any) => {
     // Open image in new tab instead of forcing download
-    const filename = safeString(processedValue)
-    const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${filename}`
-    window.open(imageUrl, '_blank', 'noopener,noreferrer')
+    let filename: string;
+
+    // Si es un objeto ProcessedImage, usar el campo processed
+    if (typeof processedValue === 'object' && processedValue.processed) {
+      filename = processedValue.processed;
+    } else {
+      // Si no, usar safeString para obtener el nombre
+      filename = safeString(processedValue);
+    }
+
+    console.log('Downloading image:', {
+      processedValue,
+      filename,
+      jobId
+    });
+
+    const imageUrl = `${API_URL}/api/v1/preview/${jobId}/${filename}`;
+    window.open(imageUrl, '_blank', 'noopener,noreferrer');
   }
 
   const getGridClass = () => {

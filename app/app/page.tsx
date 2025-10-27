@@ -109,20 +109,31 @@ export default function AppPage() {
           const statusResponse = await fetch(`${API_URL}/api/v1/status/${currentJobId}`)
           const statusData = await statusResponse.json()
           
-          // Map backend response to expected format
+          // Map backend response to expected format 
           const mappedStatusData = {
             ...statusData,
-            successful_files: statusData.successful_files?.map((file: any) => ({
-              success: true,
-              original: file,
-              processed: typeof file === 'string' ? file : file.processed || file.filename || 'unknown.jpg',
-              path: typeof file === 'string' ? file : file.path,
-              shadow_applied: typeof file === 'object' ? file.shadow_applied : false,
-              shadow_type: typeof file === 'object' ? file.shadow_type : null
-            })) || []
-          }
+            successful_files: statusData.successful_files?.map((file: any) => {
+              // Si el archivo ya tiene el formato correcto, devolverlo como está
+              if (typeof file === 'object' && file.success !== undefined) {
+                return file;
+              }
+
+              // Mapear la estructura de acuerdo al tipo de dato
+              const fileObj = typeof file === 'string' ? { processed: file } : file;
+
+              return {
+                success: true,
+                original: fileObj.original || fileObj.processed || fileObj.filename || 'unknown.jpg',
+                processed: fileObj.processed || fileObj.filename || 'unknown.jpg',
+                path: fileObj.path || `${fileObj.processed}`,
+                shadow_applied: fileObj.shadow_applied || false,
+                shadow_type: fileObj.shadow_type || null
+              };
+            }) || []
+          };
           
-          setJobStatus(mappedStatusData)
+          console.log('Mapped Status Data:', mappedStatusData);
+          setJobStatus(mappedStatusData);
           setIsDownloadReady(true)
           setIsProcessing(false)
         }
