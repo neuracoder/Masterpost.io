@@ -58,11 +58,14 @@ app.add_middleware(
         "http://localhost:3001", 
         "http://localhost:3002",
         "https://masterpost-io.netlify.app",  # Netlify production URL
+        "http://masterpost.io",    # Dominio personalizado HTTP
+        "https://masterpost.io",   # Dominio personalizado HTTPS
         os.getenv("FRONTEND_URL", "")
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"]  # Permite que el frontend acceda a headers personalizados
 )
 
 # Directories
