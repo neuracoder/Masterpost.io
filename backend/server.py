@@ -273,7 +273,7 @@ async def root():
     return {
         "message": "Masterpost.io API is running",
         "status": "online",
-        "port": 8002,
+        "port": int(os.getenv("PORT", 8002)),
         "version": "2.0.0 - Simple Local Processing"
     }
 
@@ -1015,9 +1015,10 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    print(">> Starting Simple Masterpost.io Backend on port 8002...")
-    print(">> API Docs: http://localhost:8002/docs")
-    print(">> Health: http://localhost:8002/health")
+    port = int(os.getenv("PORT", 8002))
+    print(f">> Starting Simple Masterpost.io Backend on port {port}...")
+    print(f">> API Docs: http://localhost:{port}/docs")
+    print(f">> Health: http://localhost:{port}/health")
 
     uvicorn.run(
         app,

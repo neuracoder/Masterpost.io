@@ -350,7 +350,7 @@ export default function AppPage() {
         })
       })
 
-      console.log('🌐 API Base URL:', 'http://localhost:8002/api/v1')
+      console.log('🌐 API Base URL:', process.env.NEXT_PUBLIC_API_URL || '')
       console.log('📤 Calling ImageProcessingApi.uploadAndProcess...')
 
       // Step 1: Upload files and start processing with progress tracking

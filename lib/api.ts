@@ -1,7 +1,7 @@
 // API Client for Masterpost.io Backend Integration
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8002/api/v1';
-const API_V2_BASE_URL = process.env.NEXT_PUBLIC_API_V2_URL || 'http://localhost:8002/api/v2';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
+const API_V2_BASE_URL = process.env.NEXT_PUBLIC_API_V2_URL || '';
 
 interface ApiResponse<T> {
   data?: T;
