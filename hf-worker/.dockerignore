@@ -1,0 +1,61 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+logs/
+logs_advanced/
+test_logs/
+test_response_logs/
+
+# Test files
+test_*.py
+*_test.py
+test_images/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+uploads/
+processed/
+outputs/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Documentation
+README.md
+*.md
+
+# Frontend files (not needed in backend container)
+*.js
+static/
+
+# Backup files
+*.backup

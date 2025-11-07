@@ -1,0 +1,22 @@
+{
+  "job_id": "36d993e8-73e5-42d6-8447-87683ec12c74",
+  "pipeline": "amazon",
+  "shadow_enabled": false,
+  "shadow_type": "none",
+  "total_files": 1,
+  "successful": 1,
+  "failed": 0,
+  "successful_files": [
+    {
+      "success": true,
+      "original": "20250916_222432_pexels-photo-11199906.jpeg",
+      "processed": "processed_premium_amazon_20250916_222432_pexels-photo-11199906.jpg",
+      "path": "processed\\36d993e8-73e5-42d6-8447-87683ec12c74\\processed_premium_amazon_20250916_222432_pexels-photo-11199906.jpg",
+      "shadow_applied": false,
+      "shadow_type": null
+    }
+  ],
+  "failed_files": [],
+  "status": "completed",
+  "completed_at": 1762281855.5767758
+}

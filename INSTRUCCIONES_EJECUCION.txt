@@ -1,0 +1,75 @@
+INSTRUCCIONES PARA EJECUTAR MASTERPOST.IO
+=====================================
+
+🔵 EJECUCIÓN LOCAL (DESARROLLO)
+-------------------------------------
+
+1. Copiar archivos de configuración:
+   - Duplica '.env.example' y renómbralo como '.env.development'
+   - Asegúrate que contenga estas líneas:
+     NEXT_PUBLIC_NODE_ENV=development
+     NEXT_PUBLIC_API_URL=http://localhost:8002
+     NEXT_PUBLIC_FRONTEND_URL=http://localhost:3000
+
+2. Iniciar el backend:
+   - Abre una terminal en la carpeta 'backend'
+   - Ejecuta: python server.py
+   - Debería iniciar en http://localhost:8002
+
+3. Iniciar el frontend:
+   - Abre otra terminal en la carpeta principal
+   - Ejecuta: npm run dev:win
+   - Se abrirá en http://localhost:3000
+
+🟣 VOLVER A CONFIGURACIÓN ONLINE (PRODUCCIÓN)
+-------------------------------------
+
+1. Restaurar configuración de producción:
+   - Asegúrate que el archivo '.env.production' contenga:
+     NEXT_PUBLIC_NODE_ENV=production
+     NEXT_PUBLIC_API_URL=https://masterpost-io.onrender.com
+     NEXT_PUBLIC_FRONTEND_URL=https://masterpost-io.netlify.app
+
+2. Para hacer build de producción:
+   - Ejecuta: npm run build:win
+   - Luego: npm run start:win
+
+⚠️ IMPORTANTE
+-------------------------------------
+- NO modifiques los archivos de código fuente
+- Usa SIEMPRE los archivos .env para cambiar las URLs
+- Guarda una copia de .env.production antes de modificar
+- El backend debe estar corriendo para desarrollo local
+
+🔧 SOLUCIÓN DE PROBLEMAS
+-------------------------------------
+Si algo no funciona:
+1. Verifica que el backend esté corriendo en localhost:8002
+2. Revisa que los archivos .env tengan las URLs correctas
+3. Limpia la caché del navegador
+4. Reinicia los servidores de desarrollo
+
+📂 ARCHIVOS IMPORTANTES
+-------------------------------------
+- .env.development -> Configuración local
+- .env.production -> Configuración online
+- lib/config.ts -> Gestión de entornos
+- server.py -> Servidor backend
+
+❓ AYUDA ADICIONAL
+-------------------------------------
+Si necesitas más ayuda:
+1. Revisa la documentación en README.md
+2. Verifica los logs del servidor
+3. Comprueba la consola del navegador
+4. Asegúrate de tener todas las dependencias instaladas (npm install)
+
+🔄 COMANDO RÁPIDOS (WINDOWS)
+-------------------------------------
+Desarrollo local:
+- Backend: python server.py
+- Frontend: npm run dev:win
+
+Producción:
+- Build: npm run build:win
+- Start: npm run start:win
