@@ -1,29 +1,59 @@
-# Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-python-multipart==0.0.9
+# FastAPI Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+aiofiles==23.2.1
 
-# Image Processing (Core)
-rembg==2.0.67
-pillow==10.2.0
-numpy==1.26.4
-opencv-python-headless==4.9.0.80
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+pyjwt==2.8.0
+bcrypt==4.0.1
 
-# ONNX Runtime (required by rembg)
-onnxruntime==1.16.3
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
 
-# Supabase Client
-supabase==2.3.4
-httpx==0.26.0
+# Supabase Integration
+supabase==2.3.0
 postgrest==0.13.0
+realtime==1.0.0
 storage3==0.7.0
 gotrue==2.0.0
-realtime==1.0.0
+
+# Payment Processing
+stripe==7.9.0
+
+# Image Processing (Core) - Python 3.12+ compatible
+rembg==2.0.67
+pillow==10.1.0
+numpy==1.26.4
+opencv-python-headless==4.8.1.78
+
+# Qwen API (Alibaba Cloud)
+dashscope==1.20.14
+requests==2.31.0
 
 # Utilities
-python-dotenv==1.0.1
-pydantic==2.6.1
+python-dotenv==1.0.0
+pydantic==2.5.0
 pydantic-settings==2.1.0
+httpx==0.24.1
 
-# Async support
-aiofiles==23.2.1
+# Task Queue (for production scaling)
+celery==5.3.4
+redis==5.0.1
+
+# Development (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# Type hints
+typing-extensions==4.8.0
+email-validator==2.1.0
+
+# ONNX Runtime for rembg
+onnxruntime==1.16.3
+
+# File type detection
+filetype>=1.2.0

@@ -27,13 +27,13 @@ USER user
 WORKDIR /app
 
 # Copy requirements
-COPY --chown=user:user backend/requirements.txt .
+COPY --chown=user:user requirements.txt .
 
 # Install Python packages in user space
 RUN pip install --no-cache-dir --user -r requirements.txt
 
-# Copy entire backend
-COPY --chown=user:user ./backend /app
+# Copy entire app
+COPY --chown=user:user . /app
 
 # Configure model cache in /tmp (only writable directory on HF Spaces)
 ENV U2NET_HOME=/tmp/.u2net

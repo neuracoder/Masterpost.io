@@ -49,13 +49,9 @@ outputs/
 .env.local
 .env.*
 
-# Documentation
-README.md
-*.md
-
-# Frontend files (not needed in backend container)
-*.js
-static/
+# Documentation (EXCEPT README.md needed for HF)
+DEPLOYMENT.md
+ENV_SETUP.md
 
 # Backup files
 *.backup
