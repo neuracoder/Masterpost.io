@@ -69,3 +69,9 @@ backend/.env.backup*
 
 # Sensitive documentation with API keys
 INSTRUCCIONES_CLAUDECODE_STRIPE.md
+
+# Virtual environment
+api/venv/
+venv/
+ENV/
+env/

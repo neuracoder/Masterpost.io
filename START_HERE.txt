@@ -1,0 +1,156 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║        🚀 MASTERPOST.IO - BACKEND SIMPLIFICADO CREADO                ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📁 ESTRUCTURA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+api/
+├── main.py              ← TODO el backend (1 archivo, 350 líneas)
+├── requirements.txt     ← 8 dependencias (vs 50+ anterior)
+└── README.md           ← Guía técnica
+
+vercel.json             ← Config Vercel deployment
+.env.example            ← Template variables de entorno
+
+QUICK_START.md          ← 📖 EMPIEZA AQUÍ (guía paso a paso)
+RESUMEN_MIGRACION.md    ← Resumen de lo que se hizo
+INFORME_EJECUTIVO_MIGRACION_QWEN.md  ← Análisis completo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ LO QUE SE ELIMINÓ:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ rembg (procesamiento local)
+❌ onnxruntime (dependencia pesada)
+❌ 50+ archivos de routers/services
+❌ 2 servidores separados
+❌ Complejidad innecesaria
+
+✅ LO QUE TIENES AHORA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ 1 archivo main.py con TODO
+✅ Qwen API (SOLO, premium quality)
+✅ $0 hosting (Vercel serverless)
+✅ Auth + Créditos + Pagos
+✅ Deploy en 15 minutos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 SIGUIENTE PASO (AHORA - 5 MINUTOS):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Instalar dependencias:
+   
+   cd api
+   pip install -r requirements.txt
+
+2. Configurar variables:
+   
+   cp ../.env.example .env
+   nano .env
+   
+   Necesitas:
+   - DASHSCOPE_API_KEY (Qwen API)
+   - SUPABASE_URL
+   - SUPABASE_ANON_KEY
+   - STRIPE_SECRET_KEY (opcional para test)
+
+3. Correr servidor:
+   
+   uvicorn main:app --reload
+
+4. Test básico:
+   
+   # En otra terminal
+   curl http://localhost:8000/health
+   
+   Expected:
+   {
+     "status": "healthy",
+     "qwen_configured": true,
+     "supabase_configured": true
+   }
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 DOCUMENTACIÓN COMPLETA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. QUICK_START.md
+   - Test local (5 min)
+   - Deploy Vercel (15 min)
+   - Config Stripe (20 min)
+   - Actualizar frontend
+   ⭐ LEE ESTE PRIMERO
+
+2. api/README.md
+   - Guía técnica completa
+   - Testing de endpoints
+   - Troubleshooting
+   
+3. RESUMEN_MIGRACION.md
+   - Overview de la migración
+   - Comparativa antes/después
+   - Checklist completo
+
+4. INFORME_EJECUTIVO_MIGRACION_QWEN.md
+   - Análisis detallado
+   - Arquitectura completa
+   - Plan de migración
+   - Costos proyectados
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 COSTOS FINALES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hosting:        $0/mes (Vercel Hobby gratis)
+Qwen API:       $0.045 por imagen
+Precio user:    $0.30 por imagen (3 créditos)
+Margen:         $0.255 por imagen (85%)
+
+Ejemplo 100 imágenes/mes:
+  Costo:    $4.50
+  Ingreso:  $30
+  GANANCIA: $25.50/mes ✅
+
+Ahorro vs backend anterior: $20/mes (Railway eliminado)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 RECURSOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Qwen API Docs:    https://help.aliyun.com/zh/model-studio/
+Vercel Docs:      https://vercel.com/docs
+Supabase Docs:    https://supabase.com/docs
+Stripe Docs:      https://stripe.com/docs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 COMANDOS RÁPIDOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Test local
+cd api && uvicorn main:app --reload
+
+# Deploy a Vercel
+vercel --prod
+
+# Ver logs
+vercel logs
+
+# Agregar variable de entorno
+vercel env add VARIABLE_NAME
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║  📖 LEE: QUICK_START.md PARA EMPEZAR                                ║
+║                                                                      ║
+║  🚀 OBJETIVO: Deploy en producción en <1 hora                       ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
